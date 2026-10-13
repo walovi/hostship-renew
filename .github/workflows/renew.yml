@@ -1,7 +1,7 @@
 name: Auto-Renew-HostShip
 on:
   schedule:
-    - cron: '0 2 * * *'  # 每天凌晨 2:00 UTC 运行一次
+    - cron: '0 2 */10 * *'  # 每天10天运行一次
   workflow_dispatch:
 
 jobs:
